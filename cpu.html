@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>PROCESSADORES</h1>
+        <nav><a href="#">Home</a></nav>
+    </header>
+    <main>
+
+        <article>
+            <h2>Introdução aos Processadores </h2>
+            <img src="imagens/processador-largo.png" alt=""> <br>
+
+            <audio preload="none" controls>
+                <source src="conteudo/parte1.mp3" type="audio/mpeg">
+            </audio>
+            
+            <p>
+                Um processador é um componente essencial em qualquer dispositivo eletrônico,
+                responsável por executar instruções e processar dados. Desde os primeiros computadores,
+                os processadores têm desempenhado um papel fundamental na evolução da tecnologia,
+                impulsionando avanços significativos em computação e eletrônica.
+            </p>
+            
+            <p>
+                Esses chips de silício são projetados para lidar com uma variedade de tarefas, desde cálculos
+                matemáticos simples até operações complexas em aplicativos modernos. Eles são o cérebro
+                por trás de computadores pessoais, servidores, smartphones e uma infinidade de
+                dispositivos eletrônicos que usamos em nosso dia a dia.
+            </p>
+            
+            <p>
+                Os processadores modernos são projetados com múltiplos núcleos, o que lhes permite
+                executar várias tarefas simultaneamente, melhorando significativamente o desempenho.
+                Além disso, eles incorporam tecnologias avançadas, como cache de memória, pipelines de
+                instruções e otimizações de energia, para garantir eficiência e desempenho otimizados.
+            </p>
+            
+            <p>
+                A escolha do processador certo para uma determinada aplicação é crucial, pois influencia
+                diretamente o desempenho do sistema. Com o avanço da tecnologia, os processadores
+                continuam a evoluir, oferecendo maior desempenho, eficiência energética e capacidade de
+                processamento para atender às demandas crescentes dos usuários e das aplicações
+                modernas.
+            </p>
+        </article>
+        
+        <article>
+            <h2>História e Evolução dos Processadores</h2>
+            <p>
+                A história dos processadores é uma jornada fascinante que acompanha de perto o avanço
+                da tecnologia da computação. Desde os primeiros dias da computação eletrônica até os
+                poderosos chips de hoje, os processadores evoluíram consideravelmente em termos de
+                desempenho, eficiência e complexidade.
+            </p>
+            
+            <p>
+                Os primeiros computadores eram enormes e consumiam quantidades enormes de energia.
+                Os primeiros processadores eram construídos com válvulas eletrônicas, que eram grandes,
+                quentes e propensas a falhas. O <a href="https://pt.wikipedia.org/wiki/ENIAC" target="_blank" rel="external" title="eniac-wikipédia">ENIAC</a>, um dos primeiros computadores eletrônicos, por
+                exemplo, era composto por mais de 17.000 válvulas e ocupava um espaço enorme.
+            </p>
+            <img src="imagens/eniac.jpg" alt="eniac">
+            
+            <p>
+                A transição das válvulas para os transistores, nos anos 50 e 60, foi um marco importante na
+                história dos processadores. Os transistores eram menores, mais confiáveis e consumiam
+                menos energia do que as válvulas, permitindo a criação de computadores menores, mais
+                rápidos e mais eficientes. Isso deu origem à chamada "era dos mainframes", em que os
+                computadores se tornaram mais acessíveis e começaram a ser utilizados em diversos setores.
+            </p>
+            
+            <p>
+                A década de 70 viu o surgimento dos primeiros microprocessadores, como o <a href="https://pt.wikipedia.org/wiki/Intel_4004" target="_blank" rel="external" title="intel 4004 - wikipédia">Intel 4004</a>, que
+                foi lançado em 1971 e é considerado o primeiro microprocessador comercialmente disponível. Ele tinha apenas 2.300 transistores e operava a uma velocidade de clock de 740 kHz. No entanto, foi um passo revolucionário no desenvolvimento de processadores, pois
+                permitiu a criação de computadores pessoais e dispositivos eletrônicos de consumo em massa.
+            </p>
+            <img src="imagens/intel4004.jpg" alt="intel 4004">
+            <p>
+                Nos anos seguintes, os processadores continuaram a evoluir rapidamente, com o aumento
+                do número de transistores, a melhoria da arquitetura e a introdução de novas tecnologias,
+                como o cache de memória, os pipelines de instruções e a computação paralela. Isso levou
+                ao desenvolvimento de processadores mais poderosos e eficientes, capazes de lidar com
+                tarefas cada vez mais complexas e exigentes.
+            </p>
+            
+            <p>
+                Hoje, os processadores são encontrados em uma ampla gama de dispositivos, desde
+                smartphones e tablets até servidores e supercomputadores. Eles continuam a evoluir, com o
+                desenvolvimento de tecnologias como a <a href="https://pt.wikipedia.org/wiki/Computador_qu%C3%A2ntico" target="_blank" rel="external" title="computador quântico - wikipédia">computação quântica</a> e <a href="https://pt.wikipedia.org/wiki/Engenharia_neurom%C3%B3rfica" target="_blank" rel="external" title="engenharia neuromórfica - wikipédia">neuromórfica</a>, que
+                prometem levar o desempenho e a capacidade de processamento a novos patamares. A
+                história dos processadores é uma história de inovação e progresso tecnológico, e seu papel
+                na sociedade moderna é indispensável.
+            </p>
+        </article>
+        
+        
+        <article>
+            <h2>Arquitetura Básica de um Processador</h2>
+            <p>
+                Como já foi mencionado, a CPU é responsável pelo processamento e execução de programas armazenado na memória principal. Para isso, há toda uma organização e estrutura que deve ser obedecida: primeiro o processador busca as instruções na memória, examina e, então, executa uma após a outra.
+                Para começarmos a entender como realmente ele trabalha, temos que entender como ele é organizado.
+            </p>
+
+            <h3>Organização do Processador</h3>
+
+            <p>Partes da CPU:</p>
+            <ul>
+                <li>Registradores</li>
+                <li>Unidade de Controle (UC)</li>
+                <li>Unidade Lógica e Aritmética</li>
+            </ul>
+            <p>Unidades Funcionais da CPU</p>
+            <ul>
+                <li>Unidade Funcional de Controle</li>
+                <li>Unidade Funcional de Processamento</li>
+            </ul>
+            
+            <img src="imagens/cpu-componentes.png" alt="diagrama funcional da CPU">
+            
+            <p>Fazem parte da Unidade Funcional de Processamento:</p>
+            <ul>
+                <li>Registrador</li>
+                <li>ACC</li>
+                <li>ULA</li>
+            </ul>
+            <p>Já da Unidade Funcional de Controle é:</p>
+            <ul>
+                <li>RDM</li>
+                <li>REM</li>
+                <li>CI</li>
+                <li>RI</li>
+                <li>Decodificador de instrução</li>
+                <li>UC</li>
+                <li>Clock</li>
+            </ul>
+            
+            <h3>Unidade Funcional de Processamento</h3>
+
+            <p>A Unidade Funcional de Processamento (UFP), também conhecida como Unidade de Execução (UE), é uma parte crucial da Unidade Central de Processamento (CPU) de um computador. Sua função principal é realizar operações aritméticas e lógicas nos dados, de acordo com as instruções fornecidas pelo programa em execução.</p>
+
+            <p>A UFP é responsável por executar uma ampla variedade de operações, incluindo adição, subtração, multiplicação, divisão, operações lógicas (como AND, OR, NOT), deslocamentos de bits e outras operações matemáticas e lógicas. Ela é projetada para ser capaz de lidar com diferentes tipos de dados, como inteiros, números em ponto flutuante e valores binários.</p>
+
+            <p>Além disso, a UFP também pode incluir unidades especializadas para processamento de vetores (SIMD), que são usadas para executar operações em paralelo em conjuntos de dados, melhorando o desempenho em determinadas aplicações, como processamento de imagem, áudio e vídeo.</p>
+
+            <p>Componentes que compõem a Unidade de Processamento são:</p>
+            
+            <h4>Unidade Lógica e Aritmética</h4>
+            <p>
+                A <strong>ULA</strong> é o componente que realiza operações matemáticas e lógicas, como adições,
+                subtrações, e operações booleanas AND, OR e NOT. Ela é fundamental para a execução de
+                cálculos e comparações necessárias para processar os dados de entrada.
+            </p> 
+            
+            <h4>Registradores</h4>
+            <p>
+                Os registradores são responsáveis por auxiliar o processador armazenando dados ou
+                informação que estão sendo trabalhadas por ele. Suas principais funções são: 
+            </p>
+            <p>
+                <strong>Armazenamento temporário de dados</strong>: Os registradores são usados para armazenar
+                temporariamente dados que estão sendo processados ou que serão utilizados em breve.
+                Isso ajuda a agilizar o processamento, evitando a necessidade de acessar a memória
+                principal com frequência.
+            </p>
+            
+            <p>
+                <strong>Armazenamento de endereços de memória</strong>: Os registradores de endereço são usados
+                para armazenar endereços de memória, facilitando o acesso rápido aos dados
+                armazenados em locais específicos da memória.
+            </p> 
+            
+            <p>
+                <strong>Controle do fluxo de execução</strong>: Alguns registradores, como o contador de programa
+                (program counter), são usados para controlar o fluxo de execução do programa,
+                armazenando o endereço da próxima instrução a ser executada.
+            </p>  
+            
+            <p>
+                <strong>Armazenamento de informações de status</strong>: Os registradores de status são usados para
+                armazenar informações sobre o estado do processador, como flags de condição que
+                indicam resultados de operações aritméticas ou lógicas.
+            </p> 
+            
+            <p>
+                <strong>Armazenamento de dados de configuração e controle</strong>: Os registradores de controle são
+                usados para armazenar informações de configuração e controle do processador, como o
+                modo de operação e outras configurações.
+            </p> 
+            
+            <h4>ACC</h4>
+            <p>
+                Os sistemas mais antigos possuíam um registrador especial chamado acumulador
+                ou ACC (de accumulator), o qual, além de armazenar dados, servia de elemento de
+                ligação entre a ULA e os demais dispositivos da CPU.
+            </p>  
+            
+            <h3>Unidade Funcional de Controle</h3>  
+            <p>
+                A unidade de controle é uma parte fundamental do processador responsável por coordenar e controlar todas as operações que acontecem dentro dele. Ela é responsável por interpretar e executar as instruções do programa, garantindo que sejam executadas na ordem correta e que os dados sejam movidos e processados de maneira adequada. A unidade de controle geralmente funciona em conjunto com outros componentes do processador, como os <strong>registradores</strong> e a <strong>unidade de execução</strong>. Ela recebe as instruções do programa armazenadas na memória e decodifica essas instruções, determinando qual ação deve ser executada em cada etapa do processo. Além disso, a unidade de controle também é responsável por controlar o fluxo de dados dentro do processador, garantindo que os dados sejam movidos entre os registradores e a memória de maneira eficiente. Ela também pode controlar o acesso a dispositivos de entrada e saída, garantindo que os dados sejam transferidos corretamente entre o processador e esses dispositivos.
+            </p>
+            
+            <p>Componentes que compõem a Unidade de Controle são:</p> 
+            
+            <h4>Registrador De Dados De Memória - RDM </h4>
+            <p>
+                Registrador que armazena temporariamente dados que estão sendo transferido, ou da CPU para memória ou ao contrário. Logo após, o dado é encaminhado para alguma estrutura da CPU para ser processado – no caso de leitura – ou para uma célula de memória principal - se for resultado de um processamento. Tem a mesma capacidade de armazenamento suportada pelo barramento de dados.
+            </p>
+            
+            <h4>Registrador De Endereço De Memória - REM </h4>
+            <p>
+                Registrador que armazena temporariamente o endereço de acesso a uma posição da
+                memória. Possui a mesma quantidade de bits que seu barramento de dados. De maneira
+                simples, o RDM tem a função de lembrar e informar ao processador onde se encontram
+                os dados na memória.
+            </p>
+            
+            
+            <h4>Contador De Instrução - CI </h4>
+            <p>
+                Registrador que aponta a próxima instrução a ser buscada da memória. Quando essa
+                informação é buscada da memória principal, o CI automaticamente atualiza para
+                próxima instrução. Logo é um componente essencial para manter a ordem de
+                processamentos de dados.
+            </p>
+            
+            <h4>Registrador De Instrução - RI </h4>
+            <p>
+                Registrador que tem a função de armazenar a instrução a ser executada pela CPU. Ele é
+                responsável por armazenar a instrução atual que está sendo executada pela CPU.
+                Quando a CPU busca uma instrução na memória, essa instrução é carregada no RI antes
+                de ser decodificada e executada.
+                O RI é tipicamente composto por um conjunto de bits que representam a instrução,
+                incluindo o opcode (código de operação) que identifica a operação a ser realizada, bem
+                como possíveis operandos ou endereços de memória associados à instrução.
+            </p> 
+            
+            
+            <h4>Decodificador de Instrução </h4>
+            <p>
+                Sua função principal é interpretar o código de operação (opcode) de uma instrução,
+                identificar a operação a ser executada e determinar os operandos envolvidos na
+                operação.
+                Quando uma instrução é buscada da memória e carregada no registrador de instrução
+                (RI), o decodificador de instruções entra em ação. Ele examina o opcode da instrução e,
+                com base nesse código, gera os sinais de controle necessários para coordenar as
+                operações que serão executadas pela unidade de execução da CPU.
+            </p>
+            
+            
+            <h4>Clock</h4>
+            <p>
+                Responsável por sincronizar as operações na CPU e em todo sistema. É um oscilador
+                que gera pulsos elétricos em intervalos regulares chamado ciclo de clock. Cada ciclo de
+                clock corresponde a um período de tempo durante o qual as operações no processador
+                podem ocorrer. Sua medida é dada em hertz (Hz). Nos processadores atuais essa
+                medida é dada nas casas dos mega-hertz (MHz) -milhões de ciclo por segundo – ou giga-
+                hertz (GHz) - bilhões de ciclo por segundo.
+            </p>
+        </article>
+        
+        <article>
+            <h2>Principais Fabricantes de Processador</h2>
+            <p>
+                Os processadores são produzidos por várias empresas ao redor do mundo, mas alguns
+                fabricantes se destacam pela qualidade e inovação de seus produtos. Aqui estão alguns dos
+                principais fabricantes de processadores e alguns dos modelos mais conhecidos:
+            </p>
+            
+           <h3>Intel</h3>
+            <p>
+                A <a href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank" rel="external">Intel</a> é uma das empresas mais conhecidas no mercado de processadores. Ela
+                produz uma ampla variedade de processadores para computadores pessoais, servidores e
+                dispositivos móveis. Alguns dos modelos mais conhecidos da Intel incluem o Intel Core i9,
+                <strong>Intel Core i7</strong>, <strong>Intel Core i5</strong> e <strong>Intel Core i3</strong>, que são populares em laptops e desktops.
+            </p>
+            <img src="imagens/intel.jpg" alt="intel">
+            
+            <h3>AMD (Advanced Micro Devices)</h3>
+            <p>
+                A <a href="https://www.amd.com/pt/support" target="_blank" rel="external">AMD</a> é outra empresa líder no mercado de
+                processadores. Ela é conhecida por oferecer processadores de alto desempenho a preços
+                mais acessíveis do que a Intel. Alguns dos modelos mais populares da AMD incluem o AMD
+                <strong>Ryzen 9</strong>, <strong>AMD Ryzen 7</strong>,<strong> AMD Ryzen 5</strong> e <strong>AMD Ryzen 3</strong>, que são amplamente utilizados em
+                desktops e laptops para jogos e tarefas de produtividade.
+            </p>
+            <img src="imagens/amd.jpg" alt="amd">
+            
+            <h3>Qualcomm</h3> 
+            <p>
+                <a href="https://www.qualcomm.com/" target="_blank" rel="external">Qualcomm</a> é uma empresa conhecida por seus processadores para
+                dispositivos móveis, como smartphones e tablets. Seus processadores <strong>Snapdragon</strong> são
+                amplamente utilizados em dispositivos Android e são conhecidos por sua eficiência
+                energética e desempenho sólido.
+            </p>
+            
+            <img src="imagens/qualcomm.jpeg" alt="qualcomm">
+            
+            <h3>Apple</h3> 
+            <p>
+                A <a href="https://www.apple.com/br/store?afid=p238%7Cs9fWhWrlH-dc_mtid_1870765e38482_pcrid_694142907772_pgrid_129102460058_pntwk_g_pchan__pexid__&cid=aos-br-kwgo-brand--slid---product-" target="_blank" rel="external">Apple</a> também fabrica seus próprios processadores para seus dispositivos,
+                como <strong>iPhones</strong>, <strong>iPads</strong> e <strong>Macs</strong>. Os processadores Apple, como o <strong>chip M1</strong>, são conhecidos por
+                seu desempenho excepcional e eficiência energética, ajudando a impulsionar a reputação
+                da Apple no mercado de tecnologia.
+            </p>
+            
+            <img src="imagens/apple.jpeg" alt="apple">
+            
+            <h3>IBM</h3> 
+            <p>
+                A <a href="https://www.ibm.com/br-pt?utm_content=SRCWW&p1=Search&p4=43700078862332926&p5=e&gad_source=1&gclid=CjwKCAjwnv-vBhBdEiwABCYQA5RJqwsOm-sgkvGVj-400jrM5HUdzB8QaJKAyv9_V0OCMbk_oiSQoRoCJfMQAvD_BwE&gclsrc=aw.ds" target="_blank" rel="external">IBM</a> é uma empresa conhecida por seus processadores de alto desempenho,
+                especialmente para servidores e supercomputadores. Seus processadores <strong>Power</strong> são
+                amplamente utilizados em ambientes empresariais que exigem grande poder de
+                processamento.
+            </p>
+            
+            <img src="imagens/ibm.jpg" alt="ibm">
+        </article> 
+            <article>
+                <h2>Resumo</h2>
+                <p>
+                    O processador é uma peça fundamental para o funcionamento de um computador pois é
+                    responsável por fazer os cálculos cruciais para manter o funcionamento do pc. Vimos a sua
+                    evolução, desde o Intel 4004 até os dias atuais. Entendemos a sua estrutura e organização,
+                    o funcionamento e elementos das unidades de controle e processamento e por fim os
+                    principais fabricadores de CPU da atualidade e suas características.
+                </p>
+            </article>
+        
+    </main>
+    <footer>
+        <p>Site de treinamento criado por <a href="https://github.com/Loscar99" target="_blank" rel="author">Carlos Henrique</a></p>
+    </footer>
+</body>
+</html>
