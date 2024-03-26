@@ -16,7 +16,11 @@
 
         <article>
             <h2>Introdução aos Processadores </h2>
-            <img src="imagens/processador-largo.png" alt=""> <br>
+            
+            <picture>
+                <source media="(max-width: 840px)" srcset="imagens/processador-medio.png" type="image/png">
+                <img src="imagens/processador-largo.png" alt=""> <br>
+            </picture>
 
             <audio preload="none" controls>
                 <source src="conteudo/parte1.mp3" type="audio/mpeg">
@@ -82,7 +86,7 @@
                 foi lançado em 1971 e é considerado o primeiro microprocessador comercialmente disponível. Ele tinha apenas 2.300 transistores e operava a uma velocidade de clock de 740 kHz. No entanto, foi um passo revolucionário no desenvolvimento de processadores, pois
                 permitiu a criação de computadores pessoais e dispositivos eletrônicos de consumo em massa.
             </p>
-            <img src="imagens/intel4004.jpg" alt="intel 4004">
+            <img id="pq" src="imagens/intel4004.jpg" alt="intel 4004">
             <p>
                 Nos anos seguintes, os processadores continuaram a evoluir rapidamente, com o aumento
                 do número de transistores, a melhoria da arquitetura e a introdução de novas tecnologias,

@@ -24,7 +24,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(199, 199, 199);
 }
 
 header{
@@ -40,7 +40,7 @@ header h1 {
 }
 
 nav {
-    background-color: gray;
+    background-color: black;
     
 } 
 
@@ -54,6 +54,7 @@ nav > a {
 
 nav > a:hover {
     text-decoration: underline;
+    color: var(--cor-4);
 }
 
 main{
@@ -62,22 +63,46 @@ main{
     margin: auto;
     margin-top: 30px;
     padding: 20px;
+    padding-top: 0px;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+
+}
+
+img {
+    max-width: 800px;
+    min-width: 200px;
+    margin: auto;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#pq {
+    width: 30%;
 }
 
 audio {
-    margin: 10px auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
 
 h2{
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    font: bold 2em var(--font-2);
+    font: bold 2.2em var(--font-2);
+    color: var(--cor-2);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.205);
 }
 
-h3, h4 {
+h3 {
     font: normal 1.5em var(--font-1);
     padding: 10px;
+}
+
+h4 {
+    font: normal 1.2em var(--font-1);
 }
 
 p {
@@ -88,6 +113,21 @@ p {
 
 ul li {
     list-style-position: inside;
+}
+
+strong {
+    color: var(--cor-2);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-1);
+}
+
+a:hover {
+    color: var(--cor-4);
+    text-decoration: underline;
 }
   
 
@@ -105,5 +145,5 @@ footer > p {
 footer > p > a {
     color: white;
     text-decoration: none;
-    
+    font-weight: bolder;
 }
